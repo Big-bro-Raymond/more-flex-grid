@@ -74,6 +74,10 @@ header{
     background-size: contain;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
 }
 
 /* For All Headings */
@@ -137,6 +141,7 @@ nav ul{
     padding: 0;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
 }
 
 nav a{
@@ -165,6 +170,8 @@ nav a span{
     position: relative;
     /* Styles were added here to arrange the content, I used top and z-index for this */
     /* TO DO */
+    top: 12px;
+    z-index: 2;
 }
 
 nav a:focus{
@@ -224,11 +231,15 @@ p{
     padding: 96px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
 }
 
 #plants h3, #plants > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    display: grid;
 }
 
 #plants section{
@@ -265,6 +276,8 @@ p{
     padding: 64px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 /* Contact Heading and Paragraph */
@@ -357,6 +370,9 @@ th:nth-of-type(even), td:nth-of-type(even){
 #social ul{
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
     width: fit-content;
     margin: 16px auto;
     list-style-type: none;
